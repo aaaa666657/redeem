@@ -26,7 +26,7 @@ def know_read():
 		else:
  			return "未參加活動"
 
-	return "<form method='post' action='/login'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
+	return "<form method='post' action='/know/read'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
 
 @app.route('/know/write', methods=['GET', 'POST']) 
 def know_write():
@@ -44,7 +44,7 @@ def know_write():
 		else:
  			return "未參加活動"
 
-	return "<form method='post' action='/login'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
+	return "<form method='post' action='/know/write'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
 ######################################################RPG
 @app.route('/rpg/read', methods=['GET', 'POST']) 
 def rpg_read():
@@ -58,7 +58,7 @@ def rpg_read():
 		else:
  			return "未參加活動"
 
-	return "<form method='post' action='/login'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
+	return "<form method='post' action='/rpg/read'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
 
 @app.route('/rpg/write', methods=['GET', 'POST']) 
 def rpg_write():
@@ -76,7 +76,7 @@ def rpg_write():
 		else:
  			return "未參加活動"
 
-	return "<form method='post' action='/login'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
+	return "<form method='post' action='/rpg/read'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
 
 
 if __name__ == '__main__':
