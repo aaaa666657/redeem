@@ -76,7 +76,7 @@ def rpg_write():
 		else:
  			return "未參加活動"
 
-	return "<form method='post' action='/rpg/read'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
+	return "<form method='post' action='/rpg/write'><input type='text' name='username' /></br><button type='submit'>Submit</button></form>"
 
 
 if __name__ == '__main__':
