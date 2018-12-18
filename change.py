@@ -49,7 +49,7 @@ def know_write():
 @app.route('/rpg/read', methods=['GET', 'POST']) 
 def rpg_read():
 	if request.method == 'POST': 
-		res = DB.find_one({'type':'rpg',"username" : request.values['username']})       	
+		res = DB.find_one({'type':'RPG',"username" : request.values['username']})       	
 		if res:
 			if res["redeemed"]:
 				return "已兌換過獎品"
@@ -63,7 +63,7 @@ def rpg_read():
 @app.route('/rpg/write', methods=['GET', 'POST']) 
 def rpg_write():
 	if request.method == 'POST': 
-		res = DB.find_one({'type':'rpg',"username" : request.values['username']})       	
+		res = DB.find_one({'type':'RPG',"username" : request.values['username']})       	
 		
 		if res:
 			if res["redeemed"]:
