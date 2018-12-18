@@ -70,7 +70,7 @@ def rpg_write():
 				return "已兌換過獎品"
 			else:
 				temp = res.copy()
-				temp["redeemed"] = True
+				res["redeemed"] = True
 				DB.save(res)
 				return "可兌換獎品"
 		else:
